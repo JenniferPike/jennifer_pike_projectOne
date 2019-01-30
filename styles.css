@@ -427,8 +427,26 @@ article{
         transition:min-height 3s;
     }
 }
-@media(max-width:700px){
-    
+@media(max-width:830px){
+       /*-START OF SECTION MEDIA-*/
+    .aboutUsInfo{
+        float:none;
+        width:100%;
+        text-align: center;
+    }
+    .aboutUsPhoto{
+        float:none;
+        width:100%;
+    }
+    .missionInfo{
+        float:none;
+        width:100%;
+        text-align:center;
+    }
+    .missionPhoto{
+        float:none;
+        width:100%;
+    }
 }
 @media(max-width:400px){
     /*-START OF HEADER MEDIA-*/
@@ -454,25 +472,7 @@ article{
     .socialMediaLinks{
         display:none;
     }
-    /*-START OF SECTION MEDIA-*/
-    .aboutUsInfo{
-        float:none;
-        width:100%;
-        text-align: center;
-    }
-    .aboutUsPhoto{
-        float:none;
-        width:100%;
-    }
-    .missionInfo{
-        float:none;
-        width:100%;
-        text-align:center;
-    }
-    .missionPhoto{
-        float:none;
-        width:100%;
-    }
+ 
     /*-START OF ARTICLE MEDIA-*/
     .blogText{
         width:100%;
