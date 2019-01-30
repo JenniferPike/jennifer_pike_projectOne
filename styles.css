@@ -9,6 +9,7 @@
 /* ------------START OF GENERAL STYLES-------------------- */
     ul li{
     list-style-type:none; 
+    
     }
     .wrapper{
         max-width:1600px;
@@ -21,6 +22,7 @@
     }
     ul{
         margin:0;
+        padding:0;
     }
     img{
         width:100%;
@@ -34,7 +36,7 @@
     h1{
         font-family: 'Pacifico', cursive;
         color:#f2a11c; /* #squash */
-        margin:calc(39vh - 130px) auto;
+        margin:calc(24% - 130px);
         font-size:130px;
         letter-spacing:0;
         text-align:center;   
@@ -58,11 +60,12 @@
         font-family: 'Catamaran', sans-serif;
         font-weight:600;
     }
-    .topNavBar a, .bottomNav a{
+    .topNavBar li, .bottomNav li{
         font-size:20px;
         float:left;
-        color:#ffffff;/* #white */
         padding:20px;
+        width:25%;
+        text-align:center;
     }
     i.fab{
         font-size:23px;
@@ -115,6 +118,14 @@
     header ul{
         margin:0;
     }
+    .topNavBar a, .bottomNav a{
+        color:#ffffff;/* #white */
+    }
+    .topNavBar button{
+        display:none;
+        border: none;
+        background: none;
+    }
     .socialMediaLinks{
         position: absolute;
         right:0;
@@ -126,44 +137,78 @@
     .socialMediaLinks a{
         clear:both;
         color:#f2a11c;/* #squash */
+        display:block;
+    }
+    .socialMediaLinks i{
+        display:block;
     }
 /* ------------END OF HEADER STYLES---------------------- */
-/* --------------START OF ABOUT US STYLES------------------ */
-.aboutSection{
-    width:calc(100% / 2);
-    float:left;
+/* --------------START OF SECTION 1 STYLES------------------ */
+section{
+    background:#ffffff;/* #white */
 }
 
-
-/* ---------------END OF ABOUT US STYLES------------------- */
-/* ---------------START OF MISSION STYLES------------------ */
-.missionSection{
-    width:calc(100% / 2);
+.aboutUsInfo{
+    float:left;
+    width:50%;
+    text-align: left;
+    margin: 10% 0 8% 0;
+    padding: 0px 6% 0 9%;
+}
+.aboutUsPhoto{
     float:right;
+    width:50%;
 }
-/* ----------------END OF MISSION STYLES------------------- */
-/* ------------------START OF BLOGPOST STYLES-------------- */
+.missionInfo{
+    float:right;
+    width:50%;
+    text-align: left;
+    margin: 9% 0 8% 0;
+    padding: 0px 9% 0 7%;
+}
+.missionPhoto{
+    float:left;
+    width:50%;
+}
+
+/* ----------------END OF SECTION 1 STYLES------------------- */
+/* ------------------START OF ARTICLE STYLES-------------- */
+article{
+    background:#f4f4f4; /* #light-grey */
+}
 .blogPost{
+    width:80%;
+    margin:0 auto;
+    min-height:540px;
+    padding-top:6%;
+}
+.blogText{
+    width:60%;
+    float:left;
+    padding-left:8%;
+}
+.blogPhoto{
+    max-width:315px;
     float:left;
 }
-.blogPost img{
-    clear:both;
-    width:20%;
-    float:left;
-}
-/* ------------------END OF BLOGPOST STYLES----------------- */
+/* ------------------END OF ARTICLE STYLES----------------- */
 /* -----------START OF PRODUCT BANNER STYLES--------------- */   
     .productBanner{
         background-image:url(assets/image-5.jpg);
         clear:both;
         background-size:cover;
         background-position: center center;
-        min-height:90vh;
+        min-height:489px;
     }
-
+    .products{
+        width:50%;
+        margin:0 auto;
+        padding-top:210px;
+    }
     i.fas{
         color:#ffffff;/* #white */
         font-size:30px;
+        display:block;
     }
     .productBanner a {
         color:#f2a11c;/* #squash */
@@ -171,36 +216,88 @@
         font-weight:600;
         text-align:center;
         letter-spacing:0;
+        display:block;
+    }
+    .products div{
+        float:left;
+        width:33.3%
     }
     
     /* ------------END OF PRODUCT BANNER STYLES--------------- */
     /* ------------START OF GRAM STYLES----------------- */
-    .theGram img{
-        width:20%;
+    .instagramSection {
+        min-height:750px;
     }
+    .theGram{
+        width:80%;
+        margin:0 auto;
+        padding-top:80px;
+    }
+    .theGram div{
+        width:calc((100% / 3) - 40px);
+        float:left;
+    }
+    .theGram h2{
+        text-align:center;
+        padding-bottom:80px;
+    }
+    .theGram div:first-of-type{
+        margin-right:20px;
+    }
+    .theGram div:last-child{
+        margin-left:20px;
+    }
+
     /* ------------END OF GRAM STYLES------------------- */
         
     /* -----------START OF FOOTER STYLES------------------- */
     footer{
         background:#1f2022; /* #darkerGrey */
+        clear:both;
+        min-height:412px;
     }
     footer h2{
         color:#f2a11c;/* #squash */
     }
     .contactInfo{
         clear:both;
+        width:80%;
+        margin:0 auto;
+        padding-top:50px;
+    }
+    .contact{
+        float:left;
     }
     .contactInfo p{
         color:#ffffff;/* #white */
     }
     .copywrite p{
         color:#4a4a4a;/* #darkGrey */
+        margin-top:150px;
     }
     .copywrite{
         background:#000000; /* #black */
+        text-align:center;
+        clear:both;
+    }
+    form{
+        float:right;
+    }
+    .subscription input{
+        display:block;
+        float:left;
+    }
+    .email{
+        border:none;
     }
     input{
     padding: 10px 10px;
+    }
+    input.email{
+        padding:8px 108px;
+    }
+    input.submit{
+        padding:8px 20px;
     }
     input.submit:hover{
       background:#a87015;/* #squash */;  
@@ -220,10 +317,13 @@
 @media(max-width:1210px){
     
 }
-
-@media(max-width:1210px){
-    
+@media(max-width:320px){
+    .topNavBar button{
+        display:block;
+    }
+    .topNavBar ul{
+        display:none;
+    }
 }
-
 
 /*-----------END OF MEDIA QUERIES ---------------*/
