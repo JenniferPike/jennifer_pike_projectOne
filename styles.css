@@ -433,6 +433,7 @@ article{
         float:none;
         width:100%;
         text-align: center;
+        padding: 24px;
     }
     .aboutUsPhoto{
         float:none;
@@ -442,6 +443,7 @@ article{
         float:none;
         width:100%;
         text-align:center;
+        padding: 24px;
     }
     .missionPhoto{
         float:none;
