@@ -125,6 +125,7 @@
         display:none;
         border: none;
         background: none;
+        float:right;
     }
     .socialMediaLinks{
         position: absolute;
@@ -314,16 +315,109 @@ article{
     
 }
 
-@media(max-width:1210px){
+@media(max-width:700px){
     
 }
-@media(max-width:320px){
+@media(max-width:400px){
+    /*-START OF HEADER MEDIA-*/
+    header{
+        min-height:600px;
+        background-image:url(assets/image-1-mobile.jpg)
+    }
+    h1{
+        font-size:57px;
+        text-align:center;
+        margin:0 auto;
+        padding-top:173px;
+    }
     .topNavBar button{
         display:block;
     }
     .topNavBar ul{
         display:none;
     }
+    .container{
+        max-width:320px;
+    }
+    .socialMediaLinks{
+        display:none;
+    }
+    /*-START OF SECTION MEDIA-*/
+    .aboutUsInfo{
+        float:none;
+        width:100%;
+        text-align: center;
+    }
+    .aboutUsPhoto{
+        float:none;
+        width:100%;
+    }
+    .missionInfo{
+        float:none;
+        width:100%;
+        text-align:center;
+    }
+    .missionPhoto{
+        float:none;
+        width:100%;
+    }
+    /*-START OF ARTICLE MEDIA-*/
+    .blogText{
+        width:100%;
+        text-align:center;
+        padding-bottom:10px;
+    }
+
+    /*-START OF PRODUCTS MEDIA-*/
+    .products{
+        width:100%;
+        padding-top:114px;
+    }
+    .products div{
+        width:100%;
+        float:none;
+    }
+    /*-START OF GRAM MEDIA-*/
+    .instagramSection{
+        min-height:395px;
+    }
+    .theGram div:first-of-type {
+        margin-right: 35px;
+    }
+    .theGram div:last-child{
+        display:none;
+    }
+    .theGram div{
+        width: calc((100% / 2) - 20px);
+    }
+    .theGram h2{
+        padding-bottom:50px;
+    }
+    /*-START OF FOOTER MEDIA-*/
+    footer{
+        min-height:400px;
+    }
+    .contact{
+        text-align: center;
+    }
+    .contactInfo{
+        padding:0;
+    }
+    form{
+        float:none;
+        text-align: center;
+    }
+    input.email {
+        padding: 8px 70px;
+        margin:20px 0;
+    }
+    input.submit {
+    padding: 8px 109px;
+    }
+    .copywrite p{
+        margin-top:25px;
+    }
+
 }
 
 /*-----------END OF MEDIA QUERIES ---------------*/
