@@ -311,10 +311,122 @@ article{
 /* ------------------END OF_______STYLES------------------- */
 
 /*-----------START OF MEDIA QUERIES ---------------*/
-@media(max-width:1210px){
-    
+@media(max-width:1280px){
+  /*-SECTION MEDIA-*/ 
+  .aboutUsInfo{
+      margin: 60px 0 20px 0;
+  } 
+  .missionInfo{
+      margin: 73px 0 20px 0;
+  }
 }
+@media(max-width:1098px){
+    /*-FOOTER MEDIA-*/ 
+    .contactInfo{
+        width:90%;
+        transition: width 3s;
+    }
+}
+@media(max-width:1048px){
+    /*-SECTION MEDIA-*/
+    .aboutUsInfo{
+      margin: 15px 0 20px 0;
+      transition:2s;
+    } 
+    .missionInfo{
+        margin: 15px 0 20px 0;
+    }
+    /*-GRAM MEDIA-*/ 
+    .thGram h2{
+        padding-bottom:50px;
+    }
+    .theGram div:first-of-type{
+        margin-right:30px;
+    }
+    .theGram div:last-child{
+        margin-left:30px;
+    }
+    .instagramSection {
+        min-height: 568px;
+        transition:min-height 3s;
+    }
+    /*-FOOTER MEDIA-*/
+    .contactInfo{
+        width:92%;
+        transition: width 3s;
+    }
+@media(max-width:988px){
+    .blogPost{
+        width:90%;
+        transition:width 3s;
+    }
+}
+@media(max-width:936px){
+     /*-SECTION MEDIA-*/
+    .aboutUsInfo{
+      margin:0;
+    } 
+    .missionInfo{
+      margin:0;
+    }
+    /*-PRODUCTS MEDIA-*/
+    .products{
+        width:70%;
+        transition:width 3s;
+    }
 
+    /*-FOOTER MEDIA-*/ 
+    input.submit {
+        padding: 8px 8px;
+        transition:padding 3s;
+    }
+    input.email {
+        padding: 8px 40px;
+        transition:padding 3s;
+    }
+    .copywrite p{
+        margin-top:100px;
+        transition:margin 3s;
+    }
+}
+@media(max-width:900px){
+    /*- SECTION MEDIA-*/ 
+    .aboutUsInfo{
+        width:49%;
+        padding:0;
+    }
+    .missionInfo{
+        width:49%;
+        padding:0;
+    }
+}
+@media(max-width:864px){
+    /*-HEADER MEDIA-*/
+    h1{
+        font-size:110px;
+    }
+    i.fab{
+        padding: 12px 30px 8px 0px;
+    }
+    /*-ARTICLE MEDIA-*/
+    .blogPost{
+        width:98%;
+        min-height: 470px;
+    }
+    .blogText {
+    width: 55%;
+    padding-left: 6%;
+    }
+    /*-PRODUCTS MEDIA-*/
+    .products{
+        padding-top: 144px;
+        transition:paddding 3s;
+    }
+    .productBanner{
+        min-height: 348px;
+        transition:min-height 3s;
+    }
+}
 @media(max-width:700px){
     
 }
@@ -371,11 +483,14 @@ article{
     /*-START OF PRODUCTS MEDIA-*/
     .products{
         width:100%;
-        padding-top:114px;
+        padding-top:65px;
     }
     .products div{
         width:100%;
         float:none;
+    }
+    .productBanner{
+        min-height: 397px;
     }
     /*-START OF GRAM MEDIA-*/
     .instagramSection{
